@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import questions from './questions'
-import shuffle from './shuffle'
+import questions from '../../utils/questions'
+import shuffle from '../../utils/shuffle'
 import './quiz.css'
+import Nav from '../../components/nav/nav'
 
 function QuizApp() {
   // utilisez useState pour gérer l'état de l'application
@@ -21,13 +22,50 @@ function QuizApp() {
       setScore(score + 1)
       // avance à la question suivante
       setCurrentQuestionIndex(currentQuestionIndex + 1)
+
+      // si l'utilisateur a répondu à la 10ème ou 20ème question, affiche un message de confirmation
+      if (currentQuestionIndex === 9) {
+        alert(
+          'Ok, vous avez répondu correctement à ' +
+            (currentQuestionIndex + 1) +
+            'questions! On continue! '
+        )
+      }
+      if (currentQuestionIndex === 19) {
+        alert(
+          'Bravo, vous avez répondu correctement à ' +
+            (currentQuestionIndex + 1) +
+            'questions! Ça continue ma poule! '
+        )
+      }
+      if (currentQuestionIndex === 29) {
+        alert(
+          'Ah bon, vous avez répondu correctement à ' +
+            (currentQuestionIndex + 1) +
+            'questions! Comme jésus, gaffe aux croix! '
+        )
+      }
+      if (currentQuestionIndex === 39) {
+        alert(
+          'Euuuuuuuké, vous avez répondu correctement à ' +
+            (currentQuestionIndex + 1) +
+            'questions! C’est presque la fin Tintin! '
+        )
+      }
+      if (currentQuestionIndex === 49) {
+        alert(
+          'Chaaaaaaaaaaaampion, ' +
+            (currentQuestionIndex + 1) +
+            'questions! T’es juste le meilleur, avoue t’as triché!'
+        )
+      }
     } else {
       // si l'utilisateur se trouve sur la première question, recharge la page
       if (currentQuestionIndex === 0) {
         // affiche un message de confirmation avant de faire un fast reload
         if (
           window.confirm(
-            'Votre réponse est incorrecte. Voulez-vous recommencer?'
+            'Perdu sur la première, vous êtes nuls. On recommence ?'
           )
         ) {
           window.location.reload()
@@ -66,6 +104,7 @@ function QuizApp() {
         <span> </span>
         <span className="yellow ltr">Z</span>
       </h1>
+      <Nav />
       {/* vérifie si l'utilisateur a répondu à toutes les questions */}
       {currentQuestionIndex < questions.length ? (
         <div>

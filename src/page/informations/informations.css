@@ -1,0 +1,13 @@
+.txt-legal {
+    text-align: center;
+    margin: 70px 50px 100px 50px;
+    background-color:#abdef8 ;
+    border:3px solid #adb90f ;
+
+}
+
+.main-info > .navbar >.navbar__burger {
+background-color: black;
+border-radius: 50%;
+top: 20px;
+}
