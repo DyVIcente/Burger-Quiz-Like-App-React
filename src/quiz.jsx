@@ -22,14 +22,50 @@ function QuizApp() {
       // avance à la question suivante
       setCurrentQuestionIndex(currentQuestionIndex + 1)
     } else {
-      setCurrentQuestionIndex(0)
-      setScore(0)
+      // si l'utilisateur se trouve sur la première question, recharge la page
+      if (currentQuestionIndex === 0) {
+        // affiche un message de confirmation avant de faire un fast reload
+        if (
+          window.confirm(
+            'Votre réponse est incorrecte. Voulez-vous recommencer?'
+          )
+        ) {
+          window.location.reload()
+        }
+      } else {
+        setCurrentQuestionIndex(0)
+        setScore(0)
+      }
     }
   }
 
   return (
-    <div>
-      <h1>Burger Quiz : Les Nuggets</h1>
+    <main>
+      <div className="trait-pain"></div>
+      <div className="trait-salade"></div>
+      <div className="trait-tomate"></div>
+      <h1 className="bgquiz">
+        <span className="blue ltr">B</span>
+        <span> </span>
+        <span className="blue ltr">U</span>
+        <span> </span>
+        <span className="blue ltr">R</span>
+        <span> </span>
+        <span className="blue ltr">G</span>
+        <span> </span>
+        <span className="blue ltr">E</span>
+        <span> </span>
+        <span className="blue ltr">R</span>
+        <span> </span>
+        <span> </span>
+        <span className="red ltr">Q</span>
+        <span> </span>
+        <span className="yellow ltr">U</span>
+        <span> </span>
+        <span className="red ltri">I</span>
+        <span> </span>
+        <span className="yellow ltr">Z</span>
+      </h1>
       {/* vérifie si l'utilisateur a répondu à toutes les questions */}
       {currentQuestionIndex < questions.length ? (
         <div>
@@ -74,7 +110,10 @@ function QuizApp() {
           </button>
         </div>
       )}
-    </div>
+      <div className="trait-tomate down"></div>
+      <div className="trait-salade"></div>
+      <div className="trait-pain"></div>
+    </main>
   )
 }
 

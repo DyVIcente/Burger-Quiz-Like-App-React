@@ -32,8 +32,56 @@
   
   h2 {
     margin: 20px 0;
+    text-align: center;
   }
   
   .score {
     text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
   }
+
+.bgquiz {
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+}
+  .blue {
+    background-color: blue;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+  .ltr {
+    padding: 2px;
+  }
+  .ltri{
+    padding: 2px 4px 2px 4px;
+  }
+
+
+  .trait-salade {
+    border: 3px solid green;
+  }
+
+  .trait-tomate {
+    border:3px solid red;
+  }
+  .trait-pain {
+    border: 10px solid orange;
+  }
+ .down {
+    margin-top: 20px;   
+ }
+
+ main {
+    max-width: 750px;
+    margin: auto;
+ }
