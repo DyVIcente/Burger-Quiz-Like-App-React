@@ -1,0 +1,39 @@
+.btn {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+  }
+  
+  .btn-solo {
+    font-family: "HooliganJF";
+    background-color: #abdef8;
+    border: 3px solid #adb90f;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-solo:hover {
+    background-color: #008ba3;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  h2 {
+    margin: 20px 0;
+  }
+  
+  .score {
+    text-align: center;
+  }

@@ -1,0 +1,8 @@
+body {
+  font-family: "HooliganJF"; 
+  src: url("//db.onlinewebfonts.com/t/25ca4588ae80cc33033ba7b4493d104a.eot");
+  src: url("//db.onlinewebfonts.com/t/25ca4588ae80cc33033ba7b4493d104a.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/25ca4588ae80cc33033ba7b4493d104a.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/25ca4588ae80cc33033ba7b4493d104a.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/25ca4588ae80cc33033ba7b4493d104a.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/25ca4588ae80cc33033ba7b4493d104a.svg#HooliganJF") format("svg"); }
