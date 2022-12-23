@@ -1,0 +1,21 @@
+.div-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-retour{
+    font-family: "HooliganJF";
+    background-color: #abdef8;
+    color: black;
+    border: 3px solid #adb90f;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.btn-retour:hover {
+    background-color: #008ba3; ;
+}

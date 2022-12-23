@@ -1,15 +1,33 @@
 .txt-loutre {
     text-align: center;
+    background-color: #abdef8;
+    border: 3px solid #adb90f;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15px;
+    padding: 10px;
 }
 
 .img-loutre {
-
+    
     text-align: center;
     
 }
 
 .imgimg{
+    margin-top: 15px;
     height: 255px;
     width: 335px;
     object-fit: cover;
+    border-radius: 10px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.imgimg:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }

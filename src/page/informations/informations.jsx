@@ -1,5 +1,5 @@
 import './informations.css'
-import Nav from '../../components/nav/nav'
+import Btn from '../../components/btn/button'
 
 function Info() {
   return (
@@ -7,7 +7,6 @@ function Info() {
       <div className="trait-pain"></div>
       <div className="trait-salade"></div>
       <div className="trait-tomate"></div>
-      <Nav />
       <p className="txt-legal">
         Bienvenue dans cette application d'entraînement et d'étude ! <br /> Nous
         espérons que vous apprécierez ce petit quiz qui vous permettra de vous
@@ -21,6 +20,7 @@ function Info() {
         événements réels serait purement fortuite et ne saurait engager notre
         responsabilité.
       </p>
+      <Btn />
       <div className="trait-tomate down"></div>
       <div className="trait-salade"></div>
       <div className="trait-pain"></div>

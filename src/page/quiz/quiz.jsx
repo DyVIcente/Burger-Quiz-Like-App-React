@@ -82,29 +82,32 @@ function QuizApp() {
       <div className="trait-pain"></div>
       <div className="trait-salade"></div>
       <div className="trait-tomate"></div>
-      <h1 className="bgquiz">
-        <span className="blue ltr">B</span>
-        <span> </span>
-        <span className="blue ltr">U</span>
-        <span> </span>
-        <span className="blue ltr">R</span>
-        <span> </span>
-        <span className="blue ltr">G</span>
-        <span> </span>
-        <span className="blue ltr">E</span>
-        <span> </span>
-        <span className="blue ltr">R</span>
-        <span> </span>
-        <span> </span>
-        <span className="red ltr">Q</span>
-        <span> </span>
-        <span className="yellow ltr">U</span>
-        <span> </span>
-        <span className="red ltri">I</span>
-        <span> </span>
-        <span className="yellow ltr">Z</span>
-      </h1>
-      <Nav />
+      <div>
+        <h1 className="bgquiz">
+          <span className="blue ltr">B</span>
+          <span> </span>
+          <span className="blue ltr">U</span>
+          <span> </span>
+          <span className="blue ltr">R</span>
+          <span> </span>
+          <span className="blue ltr">G</span>
+          <span> </span>
+          <span className="blue ltr">E</span>
+          <span> </span>
+          <span className="blue ltr">R</span>
+          <span> </span>
+          <span> </span>
+          <span className="red ltr">Q</span>
+          <span> </span>
+          <span className="yellow ltr">U</span>
+          <span> </span>
+          <span className="red ltri">I</span>
+          <span> </span>
+          <span className="yellow ltr">Z</span>
+        </h1>
+        <Nav />
+      </div>
+
       {/* vérifie si l'utilisateur a répondu à toutes les questions */}
       {currentQuestionIndex < questions.length ? (
         <div>

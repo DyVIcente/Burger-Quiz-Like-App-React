@@ -78,10 +78,11 @@
     border: 10px solid orange;
   }
  .down {
-    margin-top: 20px;   
+    margin-top: 40px;   
  }
 
  main {
     max-width: 750px;
     margin: auto;
  }
+

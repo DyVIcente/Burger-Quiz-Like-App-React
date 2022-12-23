@@ -1,5 +1,7 @@
+import React from 'react'
 import Loutre from '../../assets/loutre-de-mer.jpg'
 import './surprise.css'
+import Btn from '../../components/btn/button'
 
 function Surprise() {
   return (
@@ -15,6 +17,7 @@ function Surprise() {
       <div className="img-loutre">
         <img src={Loutre} alt="" className="imgimg" />
       </div>
+      <Btn />
       <div className="trait-tomate down"></div>
       <div className="trait-salade"></div>
       <div className="trait-pain"></div>
