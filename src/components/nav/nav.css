@@ -1,16 +1,4 @@
-/* .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-    min-height: 75px;
-    padding: 1rem;
-    color: black;
-    top: 25px;
-    font-size: small;
-} */
+
 
 
 
@@ -140,5 +128,9 @@ a {
     }
     .show-nav .slideDown-5 {
         transition:all 1.4s ease-out ;
+    }
+
+    .navbar {
+        height: 0;
     }
 

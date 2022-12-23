@@ -3,11 +3,19 @@ import questions from '../../utils/questions'
 import shuffle from '../../utils/shuffle'
 import './quiz.css'
 import Nav from '../../components/nav/nav'
+import alertMessages from '../../utils/alertMessage'
+import TitleBQ from '../../components/title/title'
+import alertMessages1 from '../../utils/alertMessage1'
 
 function QuizApp() {
   // utilisez useState pour gérer l'état de l'application
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [score, setScore] = useState(0)
+
+  // génère un nombre aléatoire entre 0 et 10 (inclus)
+  const randomIndex = Math.floor(Math.random() * 10)
+  // et la pour 6
+  const randomIndex1 = Math.floor(Math.random() * 6)
 
   // mélange aléatoirement la liste de questions
   shuffle(questions)
@@ -63,14 +71,12 @@ function QuizApp() {
       // si l'utilisateur se trouve sur la première question, recharge la page
       if (currentQuestionIndex === 0) {
         // affiche un message de confirmation avant de faire un fast reload
-        if (
-          window.confirm(
-            'Perdu sur la première, vous êtes nuls. On recommence ?'
-          )
-        ) {
+        if (window.confirm(alertMessages1[randomIndex1])) {
           window.location.reload()
         }
       } else {
+        // affiche un message d'alerte au hasard à partir de la liste des messages
+        alert(alertMessages[randomIndex])
         setCurrentQuestionIndex(0)
         setScore(0)
       }
@@ -83,31 +89,9 @@ function QuizApp() {
       <div className="trait-salade"></div>
       <div className="trait-tomate"></div>
       <div>
-        <h1 className="bgquiz">
-          <span className="blue ltr">B</span>
-          <span> </span>
-          <span className="blue ltr">U</span>
-          <span> </span>
-          <span className="blue ltr">R</span>
-          <span> </span>
-          <span className="blue ltr">G</span>
-          <span> </span>
-          <span className="blue ltr">E</span>
-          <span> </span>
-          <span className="blue ltr">R</span>
-          <span> </span>
-          <span> </span>
-          <span className="red ltr">Q</span>
-          <span> </span>
-          <span className="yellow ltr">U</span>
-          <span> </span>
-          <span className="red ltri">I</span>
-          <span> </span>
-          <span className="yellow ltr">Z</span>
-        </h1>
+        <TitleBQ />
         <Nav />
       </div>
-
       {/* vérifie si l'utilisateur a répondu à toutes les questions */}
       {currentQuestionIndex < questions.length ? (
         <div>

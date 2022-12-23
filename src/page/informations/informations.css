@@ -8,6 +8,10 @@
 
 }
 
+.main-info{
+    height: 100%;
+}
+
 .main-info > .navbar >.navbar__burger {
 background-color: #abdef8;
 border:3px solid #adb90f ;
